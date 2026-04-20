@@ -34,7 +34,7 @@
   "projects": {
     "p1": {
       "num": "01",
-      "type": "Business Analytics · Individual · RevoU",
+      "type": "Business Analytics",
       "title": "Store Sales Forecasting Analysis",
       "shortDesc": "Analisis 2.121 transaksi penjualan untuk optimasi strategi diskon dan identifikasi fluktuasi profit per kuartal.",
       "tags": [
@@ -185,7 +185,7 @@
     },
     "p2": {
       "num": "02",
-      "type": "Machine Learning · Computer Vision · Individual",
+      "type": "Machine Learning · Computer Vision",
       "title": "Prediksi Penyakit Daun Mawar dengan ResNet50",
       "shortDesc": "Model CNN berbasis ResNet50 dengan akurasi 94% untuk deteksi otomatis Black Spot, Downy Mildew, dan Fresh Leaf.",
       "tags": [
@@ -316,7 +316,7 @@
     },
     "p3": {
       "num": "03",
-      "type": "Machine Learning · NLP · Classification · Individual",
+      "type": "Machine Learning · NLP · Classification · Final Project",
       "title": "Klasifikasi Genre Webtoon (SVM & MLP)",
       "shortDesc": "Komparasi SVM vs MLP untuk klasifikasi 3 level popularitas webtoon dari 1.170 data — MLP unggul dengan akurasi 97%.",
       "tags": [
