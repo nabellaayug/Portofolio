@@ -205,6 +205,16 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+  // Kill all Chart.js animations globally BEFORE any chart is created
+  Chart.defaults.animation = false;
+  Chart.defaults.animations.colors = false;
+  Chart.defaults.animations.x = false;
+  Chart.defaults.animations.y = false;
+  Chart.defaults.transitions.active.animation.duration = 0;
+  Chart.defaults.transitions.resize = { animation: { duration: 0 } };
+  Chart.defaults.responsiveAnimationDuration = 0;
+</script>
 <script src="script.js"></script>
 </body>
 </html>

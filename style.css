@@ -181,7 +181,7 @@ footer{padding:2rem 4rem;border-top:1px solid var(--border);display:flex;justify
 .charts-row{display:flex;gap:1rem;align-items:flex-start;flex-wrap:nowrap}
 .chart-col{flex:1;min-width:0;display:flex;flex-direction:column;gap:.5rem}
 .chart-wrap{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:1rem;padding:1.1rem;position:relative}
-.chart-wrap canvas{max-height:240px;width:100%}
+.chart-wrap canvas{height:220px !important;max-height:220px;width:100% !important}
 .chart-note{font-size:.72rem;color:var(--muted);line-height:1.5;padding:.4rem .6rem;background:rgba(224,82,82,0.06);border-radius:.5rem;border-left:2px solid #e05252}
 
 /* INSIGHT BOX */
