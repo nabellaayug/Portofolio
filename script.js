@@ -417,7 +417,7 @@ function renderStatRow(stats) {
 function renderFunnel(steps) {
   const widths = [100, 85, 34, 19];
   const bgs = ['#72243E','#D4537E','rgba(212,83,126,0.35)','rgba(212,83,126,0.15)'];
-  const textColors = ['#fff','#fff','#72243E','#72243E'];
+  const textColors = ['#fff','#fff','#f6e9ed','#f7eef1'];
   return `<div class="rm-funnel">${steps.map((s,i)=>
     `<div class="rm-funnel-step">
       <div class="rm-funnel-label">${s.label}</div>
