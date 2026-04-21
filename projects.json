@@ -33,7 +33,7 @@
   ],
   "projects": {
     "p1": {
-      "num": "01",
+      "num": "02",
       "type": "Business Analytics",
       "title": "Store Sales Forecasting Analysis",
       "shortDesc": "Analisis 2.121 transaksi penjualan untuk optimasi strategi diskon dan identifikasi fluktuasi profit per kuartal.",
@@ -184,7 +184,7 @@
       "colabLink": "#"
     },
     "p2": {
-      "num": "02",
+      "num": "01",
       "type": "Machine Learning · Computer Vision",
       "title": "Prediksi Penyakit Daun Mawar dengan ResNet50",
       "shortDesc": "Model CNN berbasis ResNet50 dengan akurasi 94% untuk deteksi otomatis Black Spot, Downy Mildew, dan Fresh Leaf.",
@@ -315,7 +315,7 @@
       "colabLink": "https://colab.research.google.com/drive/14mACsyTzk6Rufs06vjhcqBsqLie4731f?usp=sharing"
     },
     "p3": {
-      "num": "03",
+      "num": "02",
       "type": "Machine Learning · NLP · Classification · Final Project",
       "title": "Klasifikasi Genre Webtoon (SVM & MLP)",
       "shortDesc": "Komparasi SVM vs MLP untuk klasifikasi 3 level popularitas webtoon dari 1.170 data — MLP unggul dengan akurasi 97%.",
@@ -445,7 +445,7 @@
       "colabLink": "https://colab.research.google.com/drive/1sVDdvR-nvLQVlQ5l_GDVHHNpelc41vcz?usp=sharing"
     },
     "p4": {
-      "num": "04",
+      "num": "03",
       "type": "Business Analytics · RevoU Studi Independen",
       "title": "Analisis Bisnis Netflix (2019–2021)",
       "shortDesc": "Analisis 8.807 konten dari 7 negara — identifikasi penyebab penurunan produksi 16% dan strategi pertumbuhan 15%.",
@@ -940,7 +940,7 @@
       "colabLink": "https://1drv.ms/x/c/9511c10ef81c7403/IQApZ9OwedlvQYrEd-pIKCoYAWo3nXISAnTxJl3zVU1O8uw?e=402wxs"
     },
     "p5": {
-      "num": "05",
+      "num": "03",
       "type": "Algorithm Optimization · Group Project",
       "title": "Perencanaan Diet Sehat dengan Algoritma Genetika",
       "shortDesc": "Sistem GA 10 kromosom untuk jadwal makan 28 hari — kalori optimal 1.602–1.610 kcal/hari dari target 1.608 kcal.",
