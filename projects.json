@@ -39,12 +39,11 @@
       "shortDesc": "Analisis 2.121 transaksi penjualan untuk optimasi strategi diskon dan identifikasi fluktuasi profit per kuartal.",
       "tags": [
         "Python",
-        "SQL",
         "Looker Studio",
         "EDA",
         "Issue Tree"
       ],
-      "overview": "Proyek analisis bisnis end-to-end pada data penjualan toko ritel menggunakan SQL dan Python. Fokus pada identifikasi pola profitabilitas, dampak strategi diskon terhadap margin, serta fluktuasi penjualan antar kuartal di tahun 2017. Output berupa dashboard interaktif Looker Studio dan rekomendasi strategis berbasis data.",
+      "overview": "Proyek analisis bisnis end-to-end pada data penjualan toko ritel menggunakan Python. Fokus pada identifikasi pola profitabilitas, dampak strategi diskon terhadap margin, serta fluktuasi penjualan antar kuartal di tahun 2017. Output berupa dashboard interaktif Looker Studio dan rekomendasi strategis berbasis data.",
       "background": [
         "2.121 transaksi penjualan dengan 3 sub-kategori: Furniture, Office Supplies, dan Technology.",
         "Segmen pelanggan: Consumer (51.2%), Corporate (30.6%), dan Home Office (18.2%).",
@@ -450,13 +449,12 @@
       "title": "Analisis Bisnis Netflix (2019–2021)",
       "shortDesc": "Analisis 8.807 konten dari 7 negara — identifikasi penyebab penurunan produksi 16% dan strategi pertumbuhan 15%.",
       "tags": [
-        "SQL",
-        "BigQuery",
-        "Tableau",
+        "Python",
+        "Spreadsheet",
         "Looker Studio",
         "Business Analysis"
       ],
-      "overview": "Analisis komprehensif katalog Netflix periode 2019–2021 menggunakan SQL di Google BigQuery. Menginvestigasi tren penambahan konten, distribusi genre dan rating, serta mengidentifikasi faktor penurunan produksi akibat pandemi dan persaingan platform. Output: dashboard interaktif + roadmap strategi peningkatan konten 15%/tahun.",
+      "overview": "Analisis komprehensif katalog Netflix periode 2019–2021 menggunakan Python. Menginvestigasi tren penambahan konten, distribusi genre dan rating, serta mengidentifikasi faktor penurunan produksi akibat pandemi dan persaingan platform. Output: dashboard interaktif + roadmap strategi peningkatan konten 15%/tahun.",
       "background": [
         "8.807 konten: 69% Film (6.131), 31% Acara TV (2.676), dengan 14 rating dan 34 genre.",
         "Periode 2019–2021 dari 7 negara top: USA, India, UK, Canada, Perancis, Jepang, Spanyol.",
@@ -466,7 +464,7 @@
       ],
       "problemStatement": "Apa penyebab penurunan penambahan konten Netflix 2019–2021, dan bagaimana strategi untuk meningkatkan produksi/penambahan konten sebesar 15% dalam setahun?",
       "methodology": [
-        "SQL Query di BigQuery: COUNT, GROUP BY, DATE_TRUNC per tahun dan negara.",
+        "Data Cleaning & EDA: identifikasi missing value, distribusi penjualan per segmen dan kategori.",
         "Issue Tree Decomposition: 2 root cause — persaingan platform & dampak pandemi.",
         "Distribusi analisis: rating TV-MA dominan, genre Drama terbesar, durasi 91–120 menit.",
         "Cohort analysis: negara paling terdampak penurunan produksi 2020–2021.",
