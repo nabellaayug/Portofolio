@@ -6,6 +6,29 @@
 <title>Nabella Ayu Giwanti — Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+  /* ── HERO heading pills ── */
+  .hero-h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5vw,4.8rem);line-height:1.1;font-weight:700;margin-bottom:1.5rem}
+  .hero-h1 .line-top{display:block;color:var(--text)}
+  .hero-h1 .line-mid{display:block;margin-top:.2rem}
+  .hero-h1 .line-bot{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-top:.6rem}
+  .h-pill{display:inline-flex;align-items:center;gap:.35rem;background:rgba(201,169,110,0.1);border:1px solid var(--border2);color:var(--accent2);padding:.22rem .8rem;border-radius:2rem;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+  .h-pill .dot{width:5px;height:5px;background:var(--accent);border-radius:50%;flex-shrink:0}
+
+  /* ── ABOUT specialism strip ── */
+  .about-spec-strip{display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:1.4rem}
+  .spec-badge{display:inline-flex;align-items:center;gap:.4rem;padding:.28rem .8rem;border-radius:.4rem;font-size:.72rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+  .spec-badge.data{background:rgba(91,141,217,0.12);border:1px solid rgba(91,141,217,0.3);color:#7fb3f5}
+  .spec-badge.ai{background:rgba(110,207,169,0.12);border:1px solid rgba(110,207,169,0.3);color:#6ecfa9}
+  .spec-badge.grc{background:rgba(201,169,110,0.12);border:1px solid var(--border2);color:var(--accent)}
+  .spec-badge .dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+  .spec-badge.data .dot{background:#7fb3f5}
+  .spec-badge.ai .dot{background:#6ecfa9}
+  .spec-badge.grc .dot{background:var(--accent)}
+
+  /* ── GRC skill card full-width ── */
+  .skill-card-grc{grid-column:1/-1;background:rgba(201,169,110,0.05);border-color:var(--border2)}
+</style>
 </head>
 <body>
 
@@ -27,31 +50,35 @@
   <div class="hero-grid">
     <div class="hero-content">
       <div class="hero-badge">Available for opportunities</div>
-      <h1>AI Enginerring, Data & Business <em>Analyst</em></h1>
-      <p class="hero-desc">Halo! saya Nabella, saya mempunyai keahlian di bidang Data Analytics, Machine Learning, dan Business Intelligence. Mengubah data menjadi insight yang mendukung keputusan bisnis.</p>
+
+      <h1 class="hero-h1">
+        <span class="line-top">Data, AI &</span>
+        <span class="line-mid"><em>Business Analyst</em></span>
+        <span class="line-bot">
+          <span class="h-pill"><span class="dot"></span>Machine Learning</span>
+          <span class="h-pill"><span class="dot"></span>IT Audit &amp; GRC</span>
+          <span class="h-pill"><span class="dot"></span>BI &amp; Analytics</span>
+        </span>
+      </h1>
+
+      <p class="hero-desc">Halo! saya Nabella, saya mempunyai keahlian di bidang Data Analytics, Machine Learning, Business Intelligence, serta IT Audit & GRC. Mengubah data menjadi insight yang mendukung keputusan bisnis — dan memastikan sistem IT berjalan aman, efisien, serta sesuai standar.</p>
       <div class="hero-actions">
         <a class="btn-primary" href="#projects">Lihat Portfolio</a>
         <a class="btn-ghost" href="#contact">Hubungi Saya</a>
       </div>
       <div class="hero-stats">
         <div><span class="stat-num">3.99</span><span class="stat-label">IPK / 4.00</span></div>
-        <div><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+        <div><span class="stat-num">6+</span><span class="stat-label">Projects</span></div>
         <div><span class="stat-num">10K+</span><span class="stat-label">Data Processed</span></div>
       </div>
     </div>
     <div class="hero-visual">
       <div class="profile-frame">
-        <!-- Ganti src dengan foto kamu -->
         <img src="asset/foto.png" alt="Nabella Ayu Giwanti" style="width:100%;height:100%;object-fit:cover;border-radius:2rem;">
       </div>
-      <!-- <div class="floating-card top-right">
-        <div class="fc-label">GPA</div>
-        <div class="fc-value">3.99</div>
-        <div class="fc-sub">Amikom Yogyakarta</div>
-      </div> -->
       <div class="floating-card bottom-left">
         <div class="fc-label">Stack</div>
-        <div class="fc-value" style="font-size:.9rem;line-height:1.6">Python · SQL<br>Tableau · PowerBI</div>
+        <div class="fc-value" style="font-size:.85rem;line-height:1.7">Python · SQL<br>Tableau · PowerBI<br>COBIT 2019</div>
       </div>
     </div>
   </div>
@@ -64,13 +91,23 @@
       <div class="fade-up">
         <div class="section-label">Tentang Saya</div>
         <h2>Dari data mentah ke <em>keputusan strategis</em></h2>
-        <p class="about-text">Sebagai Data & Business Analyst, saya menjembatani kompleksitas data dengan kebutuhan bisnis melalui visualisasi dan model machine learning. Berbekal pengalaman sebagai Junior AI Engineer dan Data Annotator di PT Sans Athan Group serta sebagai asisten praktikum, saya fokus menghadirkan solusi yang aplikatif dan terukur.</p>
+
+        <div class="about-spec-strip">
+          <span class="spec-badge data"><span class="dot"></span>Data &amp; Analytics</span>
+          <span class="spec-badge ai"><span class="dot"></span>AI / Machine Learning</span>
+          <span class="spec-badge grc"><span class="dot"></span>IT Audit &amp; GRC</span>
+        </div>
+
+        <p class="about-text">Sebagai Data & Business Analyst, saya menjembatani kompleksitas data dengan kebutuhan bisnis melalui visualisasi dan model machine learning. Berbekal pengalaman sebagai Junior AI Engineer dan Data Annotator di PT Sans Athan Group serta sebagai asisten praktikum, saya fokus menghadirkan solusi yang aplikatif dan terukur — termasuk dalam domain IT Audit & Governance menggunakan framework COBIT 2019.</p>
         <div class="about-tags">
           <span class="tag">Data Analyst</span>
           <span class="tag">Marketing Data Analyst</span>
-          <span class="tag">IT Bussiness Analyst</span>
+          <span class="tag">IT Business Analyst</span>
           <span class="tag">Machine Learning</span>
           <span class="tag">Artificial Intelligence</span>
+          <span class="tag">IT Internal Audit</span>
+          <span class="tag">GRC · COBIT 2019</span>
+          <span class="tag">IT Helpdesk</span>
           <span class="tag">Data Engineering</span>
         </div>
       </div>
@@ -79,6 +116,7 @@
         <div class="skill-card"><div class="skill-icon">📊</div><div class="skill-name">Visualization</div><div class="skill-items">Tableau · Looker Studio<br>Power BI · Matplotlib</div></div>
         <div class="skill-card"><div class="skill-icon">🗄️</div><div class="skill-name">Data Engineering</div><div class="skill-items">MySQL · BigQuery<br>ETL Pipeline · Data Cleaning</div></div>
         <div class="skill-card"><div class="skill-icon">🤖</div><div class="skill-name">Machine Learning</div><div class="skill-items">ResNet50 · SVM · MLP<br>EDA · Model Evaluation</div></div>
+        <div class="skill-card skill-card-grc"><div class="skill-icon">🛡️</div><div class="skill-name">IT Audit &amp; GRC</div><div class="skill-items">COBIT 2019 · Risk Assessment · Gap Analysis · IT Controls · RACI · Compliance Review</div></div>
       </div>
     </div>
   </div>
@@ -175,7 +213,7 @@
   <div class="section-inner fade-up">
     <div class="section-label">Kontak</div>
     <h2>Mari <em>Berkolaborasi</em></h2>
-    <p style="color:var(--muted);margin-bottom:.5rem;">Terbuka untuk peluang sebagai Data Analyst, Business Analyst, IT Analyst, atau Marketing Analyst.</p>
+    <p style="color:var(--muted);margin-bottom:.5rem;">Terbuka untuk peluang sebagai Data Analyst, Business Analyst, IT Analyst, IT Auditor, atau Marketing Analyst.</p>
     <a class="contact-email" href="mailto:nabellaayugiwanti@gmail.com">nabellaayugiwanti@gmail.com</a>
     <div class="social-links">
       <a class="social-link" href="tel:+6285648509585">📱 +62 856-4850-9585</a>
@@ -187,10 +225,10 @@
 
 <footer>
   <span class="footer-copy">© 2025 Nabella Ayu Giwanti. All rights reserved.</span>
-  <span class="footer-copy">Data · Business · IT Analyst</span>
+  <span class="footer-copy">Data · AI · IT Audit &amp; GRC</span>
 </footer>
 
-<!-- MODAL (shell, content injected by JS) -->
+<!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
   <div class="modal" id="modalBox">
     <div class="modal-header">
@@ -206,7 +244,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
-  // Kill all Chart.js animations globally BEFORE any chart is created
   Chart.defaults.animation = false;
   Chart.defaults.animations.colors = false;
   Chart.defaults.animations.x = false;
