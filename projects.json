@@ -25,10 +25,12 @@
     {
       "id": "cat-soon",
       "title": "IT Risk & Manajemen",
-      "subtitle": "Coming Soon",
+      "subtitle": "IT Audit · COBIT 2019 · GRC · Risk Assessment",
       "icon": "💼",
-      "projects": [],
-      "comingSoon": true
+      "projects": [
+        "p7"
+      ],
+      "comingSoon": false
     }
   ],
   "projects": {
@@ -1135,6 +1137,124 @@
               "color": "#c9a96e"
             }
           ]
+        }
+      ],
+      "dashboardLink": "#",
+      "colabLink": "#"
+    },
+    "p7": {
+      "num": "01",
+      "type": "IT Audit · GRC · COBIT 2019",
+      "title": "IT Audit Assessment — PT X (COBIT 2019)",
+      "shortDesc": "Simulasi audit IT menyeluruh terhadap PT X menggunakan COBIT 2019. Mencakup governance, risk assessment, gap analysis, dan rekomendasi berbasis risiko untuk 4 domain kontrol kritis.",
+      "tags": [
+        "COBIT 2019",
+        "IT Audit",
+        "GRC",
+        "Risk Assessment",
+        "Gap Analysis",
+        "RACI"
+      ],
+      "overview": "Proyek simulasi audit IT end-to-end terhadap PT X menggunakan COBIT 2019 — framework tata kelola IT standar global dari ISACA. Audit mencakup tiga pilar utama: Governance (keselarasan IT dengan bisnis), Risk (identifikasi dan mitigasi ancaman), serta Control (evaluasi efektivitas pengendalian internal). Environment IT PT X berjalan di atas cloud-based microservices dengan ratusan integrasi API dan sistem AI/Data yang menambah dimensi risiko baru.",
+      "background": [
+        "Infrastruktur PT X sepenuhnya cloud-based dengan arsitektur microservices — skalabilitas tinggi namun kompleksitas integrasi tinggi.",
+        "Ratusan API internal & eksternal tanpa API gateway yang optimal — potensi injection & data leakage.",
+        "Penggunaan AI/ML pipeline menambah risiko baru: bias model, privasi data, dan keamanan pipeline.",
+        "Audit mencakup 5 domain: IT Governance, IT Operations, IT Risk, Security & Compliance, dan Change Management."
+      ],
+      "problemStatement": "Sejauh mana tingkat kapabilitas proses IT PT X memenuhi standar COBIT 2019, dan apa rekomendasi perbaikan berbasis risiko yang harus diprioritaskan?",
+      "methodology": [
+        "Planning: menentukan tujuan, scope, dan domain audit (EDM, APO, BAI, DSS, MEA).",
+        "Data Collection: interview stakeholder dan review dokumen kebijakan IT existing.",
+        "Process Mapping: memetakan proses operasional ke domain COBIT 2019.",
+        "Risk Assessment: menilai risiko berdasarkan dampak dan likelihood per kategori.",
+        "Control Evaluation: mengecek efektivitas 4 kontrol utama (Access, Change, Logging, Monitoring).",
+        "GAP Analysis: membandingkan capability level aktual vs target COBIT level 4.",
+        "Recommendation: menyusun action items berbasis prioritas risiko untuk 90 hari ke depan."
+      ],
+      "findings": [
+        "3 dari 4 kontrol IT berada di Risk Level HIGH: Access Control (Weak), Change Management (No SOP), Monitoring (Manual).",
+        "Capability Level aktual PT X: Level 3 (Established) — proses terdefinisi namun belum terstandarisasi penuh.",
+        "Gap Analysis: Access, Monitoring, dan Change masing-masing memiliki gap 2 level dari target.",
+        "Hanya Logging yang berada di risk Medium dengan gap 1 level — relatif paling baik kondisinya.",
+        "Risk score tertinggi: Access, Data Breach, dan Monitoring di level 3 (HIGH). Downtime di level 2 (MEDIUM)."
+      ],
+      "results": [
+        {
+          "num": "3/4",
+          "label": "Kontrol di risk HIGH"
+        },
+        {
+          "num": "Level 3",
+          "label": "Capability Level saat ini"
+        },
+        {
+          "num": "Level 4",
+          "label": "Target COBIT"
+        },
+        {
+          "num": "90 hari",
+          "label": "Timeline rekomendasi"
+        }
+      ],
+      "recommendations": [
+        "R1 — HIGH: Implementasi RBAC (Role-Based Access Control) dan quarterly access review.",
+        "R2 — HIGH: Standardisasi SOP Change Management lengkap dengan approval & dokumentasi.",
+        "R3 — HIGH: Deploy platform monitoring otomatis (SIEM/NOC) dengan alerting real-time.",
+        "R4 — MEDIUM: Bangun centralized technical documentation (wiki/knowledge base)."
+      ],
+      "charts": [
+        {
+          "id": "c1",
+          "title": "Risk Assessment per Kategori",
+          "xTitle": "Risk Category",
+          "yTitle": "Risk Level (1=Low, 4=Critical)",
+          "type": "bar",
+          "labels": [
+            "Access",
+            "Data Breach",
+            "Downtime",
+            "Monitoring"
+          ],
+          "values": [
+            3,
+            3,
+            2,
+            3
+          ],
+          "colors": [
+            "#e05252cc",
+            "#e05252cc",
+            "#c9a96ecc",
+            "#e05252cc"
+          ],
+          "note": "🔴 3 dari 4 kategori di level HIGH — perbaikan segera diperlukan"
+        },
+        {
+          "id": "c2",
+          "title": "GAP Analysis: Current vs Target Capability Level",
+          "xTitle": "Area",
+          "yTitle": "Capability Level (COBIT 0–5)",
+          "type": "bar",
+          "labels": [
+            "Access",
+            "Monitoring",
+            "Logging",
+            "Change"
+          ],
+          "values": [
+            2,
+            2,
+            3,
+            2
+          ],
+          "colors": [
+            "#5b8dd9cc",
+            "#5b8dd9cc",
+            "#6ecfa9cc",
+            "#5b8dd9cc"
+          ],
+          "note": "🎯 Target semua area: Level 4 (Predictable) — gap 2 level untuk 3 area"
         }
       ],
       "dashboardLink": "#",
