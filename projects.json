@@ -19,7 +19,8 @@
       "projects": [
         "p2",
         "p3",
-        "p5"
+        "p5",
+        "p8"
       ]
     },
     {
@@ -1255,6 +1256,153 @@
             "#5b8dd9cc"
           ],
           "note": "🎯 Target semua area: Level 4 (Predictable) — gap 2 level untuk 3 area"
+        }
+      ],
+      "dashboardLink": "#",
+      "colabLink": "#"
+    },
+    "p8": {
+      "num": "02",
+      "type": "Machine Learning · Computer Vision · Skripsi · Published",
+      "title": "Perbandingan CNN untuk Deteksi Penyakit Daun Jagung",
+      "shortDesc": "Komparasi 4 model CNN (ECA-NFNet-L0, ResNet50, DenseNet121, SqueezeNet1_1) dengan optimizer Adam & SGDM — ECA-NFNet-L0 unggul dengan akurasi uji 98.71% dan akurasi pelatihan 99.80%.",
+      "tags": [
+        "Python",
+        "PyTorch",
+        "CNN",
+        "ECA-NFNet",
+        "ResNet50",
+        "DenseNet121",
+        "Deep Learning",
+        "Computer Vision"
+      ],
+      "overview": "Penelitian skripsi ini membandingkan performa 4 arsitektur CNN untuk deteksi penyakit daun tanaman jagung pada gambar beresolusi rendah (96 dpi). Setiap model diuji dengan dua optimizer (Adam & SGDM) dan dua learning rate (0.001 & 0.01) menggunakan k-fold cross validation. Target: menemukan kombinasi model-optimizer terbaik untuk penerapan nyata di sektor pertanian. Penelitian ini telah dipublikasikan di jurnal Engineering and Applied Science Research (EASR), ISSN: 2539-6161.",
+      "background": [
+        "Indonesia 2024: luas panen jagung 2.58 juta hektar, produksi 15.21 juta ton — komoditas pertanian strategis.",
+        "4 kelas penyakit: Blight, Gray Leaf Spot, Common Rust, dan Healthy — deteksi dini kritis untuk ketahanan pangan.",
+        "Tantangan utama: waktu pelatihan lama, kebutuhan memori besar, dan penurunan akurasi pada data resolusi rendah.",
+        "Gambar berkualitas 96 dpi digunakan — simulasi kondisi lapangan nyata di petani dengan perangkat terbatas."
+      ],
+      "problemStatement": "Bagaimana perbandingan kinerja dan efektivitas model CNN (ECA-NFNet-L0, ResNet50, DenseNet121, SqueezeNet1_1) dengan optimizer Adam & SGDM dalam mendeteksi penyakit daun jagung pada gambar resolusi rendah?",
+      "methodology": [
+        "Pre-processing: ekstraksi label, transformasi & normalisasi gambar, pemisahan data train/test.",
+        "Training 4 model CNN dengan 2 optimizer (Adam & SGDM) × 2 learning rate (0.001 & 0.01) = 8 kombinasi per model.",
+        "K-Fold Cross Validation untuk mengukur average accuracy yang robust dan tidak bias.",
+        "Evaluasi: accuracy, standar deviasi, F1-score, precision, recall per model dan kombinasi optimizer.",
+        "Perbandingan waktu pelatihan (detik/epoch) untuk menilai efisiensi komputasi setiap arsitektur."
+      ],
+      "findings": [
+        "ECA-NFNet-L0 terbaik secara keseluruhan: accuracy pengujian 98.71% (Adam, LR=0.01) dan training 99.80%.",
+        "ResNet50 menyusul di posisi 2: accuracy pengujian 98.42% dengan Adam LR=0.001.",
+        "SqueezeNet1_1 paling efisien secara waktu: hanya 57.24 detik/epoch dengan SGDM LR=0.01.",
+        "DenseNet121 paling lambat: 136.78 detik/epoch dengan Adam LR=0.001 — overhead memori terbesar.",
+        "Adam optimizer umumnya menghasilkan akurasi lebih tinggi dibanding SGDM di dataset ini."
+      ],
+      "results": [
+        {
+          "num": "98.71%",
+          "label": "Akurasi uji terbaik (ECA-NFNet-L0)"
+        },
+        {
+          "num": "99.80%",
+          "label": "Akurasi training terbaik"
+        },
+        {
+          "num": "4",
+          "label": "Model CNN dibandingkan"
+        },
+        {
+          "num": "EASR",
+          "label": "Dipublikasikan di jurnal internasional"
+        }
+      ],
+      "recommendations": [
+        "ECA-NFNet-L0 + Adam (LR=0.01) direkomendasikan untuk deployment akurasi tinggi.",
+        "SqueezeNet1_1 + SGDM cocok untuk lingkungan edge computing dengan resource terbatas.",
+        "Eksplorasi optimizer lanjutan: AdamW dan RMSprop untuk potensi peningkatan lebih jauh.",
+        "Kembangkan sebagai aplikasi mobile offline untuk deteksi real-time di lahan pertanian tanpa internet."
+      ],
+      "charts": [
+        {
+          "id": "c1",
+          "title": "Akurasi Pengujian per Model & Optimizer",
+          "xTitle": "Model CNN",
+          "yTitle": "Akurasi (%)",
+          "type": "classificationBar",
+          "labels": [
+            "DenseNet121",
+            "ResNet50",
+            "SqueezeNet1_1",
+            "ECA_NFNet_l0"
+          ],
+          "datasets": [
+            {
+              "label": "Adam LR=0.001",
+              "data": [
+                96.84,
+                98.42,
+                97.53,
+                98.63
+              ],
+              "color": "#c9a96e"
+            },
+            {
+              "label": "Adam LR=0.01",
+              "data": [
+                95.71,
+                97.73,
+                97.94,
+                98.71
+              ],
+              "color": "#5b8dd9"
+            },
+            {
+              "label": "SGDM LR=0.001",
+              "data": [
+                96.68,
+                95.63,
+                97.37,
+                97.37
+              ],
+              "color": "#6ecfa9"
+            },
+            {
+              "label": "SGDM LR=0.01",
+              "data": [
+                97.29,
+                98.3,
+                97.78,
+                98.3
+              ],
+              "color": "#e05252"
+            }
+          ]
+        },
+        {
+          "id": "c2",
+          "title": "Waktu Pelatihan per Model (detik/epoch) — Adam LR=0.001",
+          "xTitle": "Model CNN",
+          "yTitle": "Detik per Epoch",
+          "type": "bar",
+          "labels": [
+            "DenseNet121",
+            "ResNet50",
+            "SqueezeNet1_1",
+            "ECA_NFNet_l0"
+          ],
+          "values": [
+            136.78,
+            96.81,
+            97.52,
+            76.4
+          ],
+          "colors": [
+            "#e05252cc",
+            "#c9a96ecc",
+            "#c9a96ecc",
+            "#6ecfa9cc"
+          ],
+          "note": "🟢 ECA-NFNet-L0 training paling cepat (76.40 dtk) sekaligus akurasi tertinggi — best overall"
         }
       ],
       "dashboardLink": "#",
