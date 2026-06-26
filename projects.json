@@ -1263,7 +1263,7 @@
     },
     "p8": {
       "num": "02",
-      "type": "Machine Learning · Computer Vision · Skripsi · Published",
+      "type": "Machine Learning · Computer Vision · Skripsi",
       "title": "Perbandingan CNN untuk Deteksi Penyakit Daun Jagung",
       "shortDesc": "Komparasi 4 model CNN (ECA-NFNet-L0, ResNet50, DenseNet121, SqueezeNet1_1) dengan optimizer Adam & SGDM — ECA-NFNet-L0 unggul dengan akurasi uji 98.71% dan akurasi pelatihan 99.80%.",
       "tags": [
@@ -1276,7 +1276,7 @@
         "Deep Learning",
         "Computer Vision"
       ],
-      "overview": "Penelitian skripsi ini membandingkan performa 4 arsitektur CNN untuk deteksi penyakit daun tanaman jagung pada gambar beresolusi rendah (96 dpi). Setiap model diuji dengan dua optimizer (Adam & SGDM) dan dua learning rate (0.001 & 0.01) menggunakan k-fold cross validation. Target: menemukan kombinasi model-optimizer terbaik untuk penerapan nyata di sektor pertanian. Penelitian ini telah dipublikasikan di jurnal Engineering and Applied Science Research (EASR), ISSN: 2539-6161.",
+      "overview": "Penelitian skripsi ini membandingkan performa 4 arsitektur CNN untuk deteksi penyakit daun tanaman jagung pada gambar beresolusi rendah (96 dpi). Setiap model diuji dengan dua optimizer (Adam & SGDM) dan dua learning rate (0.001 & 0.01) menggunakan k-fold cross validation. Target: menemukan kombinasi model-optimizer terbaik untuk penerapan nyata di sektor pertanian.",
       "background": [
         "Indonesia 2024: luas panen jagung 2.58 juta hektar, produksi 15.21 juta ton — komoditas pertanian strategis.",
         "4 kelas penyakit: Blight, Gray Leaf Spot, Common Rust, dan Healthy — deteksi dini kritis untuk ketahanan pangan.",
@@ -1310,10 +1310,6 @@
         {
           "num": "4",
           "label": "Model CNN dibandingkan"
-        },
-        {
-          "num": "EASR",
-          "label": "Dipublikasikan di jurnal internasional"
         }
       ],
       "recommendations": [
